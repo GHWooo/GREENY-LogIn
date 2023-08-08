@@ -1,12 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 #greeny_grid {
     position: absolute;
     opacity: 0.5;
-    z-index: 0;
-    top: 0;
-    left: 0;
+    z-index: -1;
+    top: 9px;
+    left: 9px;
 }
 
-#svg {
-    width: 909px;
-    height: 2304px;
+#pupils {
+    width: 80px;
+    height: 210px;
+}
+#eyes {
+    width: 120px;
+    height: 330px;
 }
