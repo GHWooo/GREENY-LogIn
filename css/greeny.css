@@ -3,7 +3,7 @@ body {
     flex-direction: column;
 }
 
-#greeny_grid {
+#greeny_sample {
     position: absolute;
     opacity: 0.5;
     z-index: -1;
