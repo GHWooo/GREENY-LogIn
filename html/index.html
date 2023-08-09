@@ -4,19 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GREENY_LOGIN</title>
+    <script type="text/javascript" src="../js/importPage.js"></script>
 </head>
 <body>
     <div id="greeny"></div>
 
     <script>
-        async function fetchHtmlAsText(url) {
-            return await (await fetch(url)).text();
-        }
-
-        async function importPage(target) {
-            document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
-        }
-
         importPage('greeny');
     </script>
 </body>
