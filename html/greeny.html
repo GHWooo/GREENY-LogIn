@@ -5,8 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GREENY</title>
     <link rel="stylesheet" href="../css/greeny.css">
+    <script type="text/javascript" src="../js/importPage.js"></script>
 </head>
 <body>
-    <img id="greeny_sample" src="../images/greeny_sample.jpg"/>
+    <div id="greeny">
+        <div id="group_pupil">
+            <div id="left_pupil"></div>
+            <div id="right_pupil"></div>
+        </div>
+        <div id="group_eye">
+            <div id="left_eye"></div>
+            <div id="right_eye"></div>
+        </div>
+        <div id="right_wing"></div>
+        <div id="topButton"></div>
+        <div id="band"></div>
+        <div id="hat"></div>
+        <div id="rightLeg"></div>
+        <div id="right_shoes"></div>
+        <div id="leftLeg"></div>
+        <div id="left_shoes"></div>
+        <div id="left_wing"></div>
+    </div>
+
+    <script>
+        const componentCategories = ['pupil', 'eye', 'wing', 'topButton', 'band', 'hat', 'leftLeg', 'rightLeg', 'shoes'];
+
+        componentCategories.forEach(category => {
+            if(category === 'pupil') {
+                importPage(category, 'components/', 'left_pupil');
+                importPage(category, 'components/', 'right_pupil');
+            }
+            else if(category === 'eye') {
+                importPage(category, 'components/', 'left_eye');
+                importPage(category, 'components/', 'right_eye');
+            }
+            else if(category === 'wing') {
+                importPage(category, 'components/', 'left_wing');
+                importPage(category, 'components/', 'right_wing');
+            }
+            else if(category === 'shoes') {
+                importPage(category, 'components/', 'left_shoes');
+                importPage(category, 'components/', 'right_shoes');
+            }
+            else {
+                importPage(category, 'components/');
+            }
+        })
+    </script>
 </body>
 </html>

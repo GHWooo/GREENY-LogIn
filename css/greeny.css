@@ -3,47 +3,95 @@ body {
     flex-direction: column;
 }
 
+#greeny {
+    position: relative;
+}
+
+#greeny > div {
+    position: absolute;
+}
+
+#right_wing {
+    z-index: 12;
+    top: 70px;
+    left: 428.5px;
+}
+#left_wing {
+    z-index: 5;
+    top: 44px;
+    left: 94px;
+}
+
+#group_pupil {
+    z-index: 11;
+    top: 339.5px;
+    left: 165px;
+    display: flex;
+}
+#right_pupil {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#group_eye {
+    top: 326px;
+    left: 165px;
+    display: flex;
+}
+#right_eye {
+    z-index: 10;
+    margin-left: -30px;
+    margin-top: 6px;
+}
+#left_eye {
+    z-index: 9;
+}
+
+#topButton {
+    z-index: 8;
+    top: 193.5px;
+    left: 290.5px;
+}
+
+#band {
+    z-index: 7;
+    top: 284px;
+    left: 110px;
+}
+
+#hat {
+    z-index: 6;
+    top: 200px;
+    left: 45px;
+}
+
+#rightLeg {
+    z-index: 4;
+    top: 517px;
+    left: 336px;
+}
+#right_shoes {
+    z-index: 3;
+    top: 596px;
+    left: 273px;
+}
+
+#leftLeg {
+    z-index: 2;
+    top: 554px;
+    left: 242px;
+}
+#left_shoes {
+    z-index: 1;
+    top: 589px;
+    left: 176px;
+}
+
+/* 추후 삭제 예정 */
 #greeny_sample {
     position: absolute;
     opacity: 0.5;
     z-index: -1;
     top: 9px;
     left: 9px;
-}
-
-#pupil {
-    width: 80px;
-    height: 120px;
-}
-#eye {
-    width: 120px;
-    height: 160px;
-}
-#wing {
-    width: 230px;
-    height: 410px;
-}
-#top_button {
-    width: 80px;
-    height: 50px;
-}
-#band {
-    width: 500px;
-    height: 225px;
-}
-#hat {
-    width: 600px;
-    height: 390px;
-}
-#left_leg {
-    width: 120px;
-    height: 65px;
-}
-#right_leg {
-    width: 120px;
-    height: 110px;
-}
-#shoes {
-    width: 190px;
-    height: 90px;
 }
