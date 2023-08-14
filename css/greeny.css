@@ -86,12 +86,3 @@ body {
     top: 589px;
     left: 176px;
 }
-
-/* 추후 삭제 예정 */
-#greeny_sample {
-    position: absolute;
-    opacity: 0.5;
-    z-index: -1;
-    top: 9px;
-    left: 9px;
-}
