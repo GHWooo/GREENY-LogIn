@@ -12,7 +12,7 @@ body {
 }
 
 #right_wing {
-    z-index: 12;
+    z-index: 11;
     top: 70px;
     left: 428.5px;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 #group_pupil {
-    z-index: 11;
+    z-index: 10;
     top: 339.5px;
     left: 165px;
     display: flex;
@@ -34,17 +34,18 @@ body {
 }
 
 #group_eye {
+    z-index: 9;
     top: 326px;
     left: 165px;
     display: flex;
 }
 #right_eye {
-    z-index: 10;
+    z-index: 2;
     margin-left: -30px;
     margin-top: 6px;
 }
 #left_eye {
-    z-index: 9;
+    z-index: 1;
 }
 
 #topButton {
