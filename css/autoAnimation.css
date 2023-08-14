@@ -55,3 +55,43 @@
 }
 
 /* ===== 앉았다 일어났다 애니메이션 ===== */
+
+/* ===== 눈동자 좌우로 움직이는 애니메이션 ===== */
+
+@keyframes pupilSideMove {
+    70% {
+        transform: translate(0, 0);
+    }
+    85% {
+        transform: translate(15px, 0);
+    }
+    90% {
+        transform: translate(15px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes eyeSideMove {
+    70% {
+        transform: translate(0, 0);
+    }
+    85% {
+        transform: translate(10px, 0);
+    }
+    90% {
+        transform: translate(10px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#left_pupil, #right_pupil {
+    animation: pupilSideMove 8s infinite;
+}
+#left_eye, #right_eye {
+    animation: eyeSideMove 8s infinite;
+}
+
+/* ===== 눈동자 좌우로 움직이는 애니메이션 ===== */
