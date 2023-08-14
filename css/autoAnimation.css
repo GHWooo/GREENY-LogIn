@@ -1,0 +1,57 @@
+/* ===== 앉았다 일어났다 애니메이션 ===== */
+
+@keyframes rightSitDown {
+    80% {
+        top: 517px;
+        transform: scale(1);
+    }
+    90% {
+        top: 533px;
+        transform: scale(1, 0.6);
+    }
+    100% {
+        top: 517px;
+        transform: scale(1);
+    }
+}
+@keyframes leftSitDown {
+    80% {
+        top: 555px;
+        transform: scale(1);
+    }
+    90% {
+        top: 559px;
+        transform: scale(1, 0.8);
+    }
+    100% {
+        top: 555px;
+        transform: scale(1);
+    }
+}
+
+@keyframes moveDown {
+    80% {
+        transform: translate(0, 0);
+    }
+    90% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#rightLeg {
+    top: 517px;
+    animation: rightSitDown 5s infinite;
+}
+#leftLeg {
+    top: 555px;
+    animation: leftSitDown 5s infinite;
+}
+
+#right_wing, #group_pupil, #group_eye, #topButton, #band, #hat, #left_wing {
+    animation: moveDown 5s infinite;
+}
+
+/* ===== 앉았다 일어났다 애니메이션 ===== */
