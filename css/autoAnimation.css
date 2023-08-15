@@ -62,7 +62,7 @@
     animation: leftSitDown 5s infinite;
 }
 
-#right_wing, #group_pupil, #group_eye, #topButton, #band, #hat, #left_wing {
+#right_wing_box, #group_pupil, #group_eye, #topButton, #band, #hat, #left_wing_box {
     animation: moveDown 5s infinite;
 }
 
@@ -107,3 +107,30 @@
 }
 
 /* ===== 눈동자 좌우로 움직이는 애니메이션 ===== */
+
+/* ===== 날개 터는 애니메이션 ===== */
+
+@keyframes flapMove {
+    96% {
+        transform: rotate(0);
+    }
+    97% {
+        transform: rotate(10deg);
+    }
+    98% {
+        transform: rotate(0);
+    }
+    99% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+#right_wing, #left_wing {
+    transform-origin: 50px 330px;
+    animation: flapMove 10s infinite;
+}
+
+/* ===== 날개 터는 애니메이션 ===== */
