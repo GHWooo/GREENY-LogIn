@@ -11,12 +11,12 @@ body {
     position: absolute;
 }
 
-#right_wing {
+#right_wing_box {
     z-index: 11;
     top: 70px;
     left: 428.5px;
 }
-#left_wing {
+#left_wing_box {
     z-index: 5;
     top: 44px;
     left: 94px;
