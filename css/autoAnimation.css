@@ -34,13 +34,13 @@
         transform: translate(0, 0);
     }
     20% {
-        transform: translate(0, 2px);
+        transform: translate(0, 3px);
     }
     40% {
         transform: translate(0, 0);
     }
     60% {
-        transform: translate(0, 2px);
+        transform: translate(0, 3px);
     }
     80% {
         transform: translate(0, 0);
