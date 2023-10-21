@@ -12,7 +12,7 @@ body {
 }
 
 #right_wing_box {
-    z-index: 11;
+    z-index: 12;
     top: 70px;
     left: 428.5px;
 }
@@ -23,7 +23,8 @@ body {
 }
 
 #group_pupil {
-    z-index: 10;
+    opacity: 1;
+    z-index: 11;
     top: 339.5px;
     left: 165px;
     display: flex;
@@ -31,6 +32,18 @@ body {
 #right_pupil {
     margin-left: 10px;
     margin-top: 5px;
+}
+
+#group_close_eye {
+    opacity: 0;
+    z-index: 10;
+    top: 410px;
+    left: 183px;
+    display: flex;
+}
+#right_close_eye {
+    margin-left: 30px;
+    margin-top: 8px;
 }
 
 #group_eye {

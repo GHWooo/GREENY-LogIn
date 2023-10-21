@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="greeny">
-        <!-- 날개 -->
+        <!-- 오른쪽 날개 -->
         <div id="right_wing_box">
             <div id="right_wing"></div>
         </div>
@@ -19,6 +19,12 @@
         <div id="group_pupil">
             <div id="left_pupil"></div>
             <div id="right_pupil"></div>
+        </div>
+
+        <!-- 감은 눈 -->
+        <div id="group_close_eye">
+            <div id="left_close_eye"></div>
+            <div id="right_close_eye"></div>
         </div>
 
         <!-- 눈 흰자 -->
@@ -51,7 +57,7 @@
     </div>
 
     <script>
-        const componentCategories = ['pupil', 'eye', 'wing', 'topButton', 'band', 'hat', 'leftLeg', 'rightLeg', 'shoes'];
+        const componentCategories = ['pupil', 'eye', 'closeEye', 'wing', 'topButton', 'band', 'hat', 'leftLeg', 'rightLeg', 'shoes'];
 
         componentCategories.forEach(category => {
             if(category === 'pupil') {
@@ -61,6 +67,10 @@
             else if(category === 'eye') {
                 importPage(category, 'components/', 'left_eye');
                 importPage(category, 'components/', 'right_eye');
+            }
+            else if(category === 'closeEye') {
+                importPage(category, 'components/', 'left_close_eye');
+                importPage(category, 'components/', 'right_close_eye');
             }
             else if(category === 'wing') {
                 importPage(category, 'components/', 'left_wing');

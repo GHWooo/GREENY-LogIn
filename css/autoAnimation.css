@@ -62,7 +62,7 @@
     animation: leftSitDown 5s infinite;
 }
 
-#right_wing_box, #group_pupil, #group_eye, #topButton, #band, #hat, #left_wing_box {
+#right_wing_box, #group_eye, #topButton, #band, #hat, #left_wing_box {
     animation: moveDown 5s infinite;
 }
 
@@ -99,7 +99,7 @@
     }
 }
 
-#left_pupil, #right_pupil {
+#left_pupil, #right_pupil, #left_close_eye, #right_close_eye {
     animation: pupilSideMove 8s infinite;
 }
 #left_eye, #right_eye {
@@ -107,6 +107,72 @@
 }
 
 /* ===== 눈동자 좌우로 움직이는 애니메이션 ===== */
+
+/* ===== 눈 깜빡이는 애니메이션 ===== */
+
+@keyframes eyeOpen {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(0, 3px);
+    }
+    40% {
+        transform: translate(0, 0);
+    }
+    50% { opacity: 0; }
+    51% { opacity: 1; }
+    53% { opacity: 1; }
+    54% { opacity: 0; }
+    60% {
+        transform: translate(0, 3px);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+    90% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes eyeClose {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(0, 3px);
+    }
+    40% {
+        transform: translate(0, 0);
+    }
+    50% { opacity: 1; }
+    51% { opacity: 0; }
+    53% { opacity: 0; }
+    54% { opacity: 1; }
+    60% {
+        transform: translate(0, 3px);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+    90% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#group_pupil {
+    animation: eyeClose 5s infinite;
+}
+#group_close_eye {
+    animation: eyeOpen 5s infinite;
+}
+
+/* ===== 눈 깜빡이는 애니메이션 ===== */
 
 /* ===== 날개 터는 애니메이션 ===== */
 
