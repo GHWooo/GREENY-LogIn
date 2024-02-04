@@ -69,41 +69,7 @@
     </div>
 
     <script>
-        const componentCategories = ['pupil', 'eye', 'closeEye', 'smileEye', 'tears', 'wing', 'topButton', 'band', 'hat', 'leftLeg', 'rightLeg', 'shoes'];
-
-        componentCategories.forEach(category => {
-            if(category === 'pupil') {
-                importPage(category, 'components/', 'left_pupil');
-                importPage(category, 'components/', 'right_pupil');
-            }
-            else if(category === 'eye') {
-                importPage(category, 'components/', 'left_eye');
-                importPage(category, 'components/', 'right_eye');
-            }
-            else if(category === 'closeEye') {
-                importPage(category, 'components/', 'left_close_eye');
-                importPage(category, 'components/', 'right_close_eye');
-            }
-            else if(category === 'smileEye') {
-                importPage(category, 'components/', 'left_smile_eye');
-                importPage(category, 'components/', 'right_smile_eye');
-            }
-            else if(category === 'tears') {
-                importPage(category, 'components/', 'left_tears');
-                importPage(category, 'components/', 'right_tears');
-            }
-            else if(category === 'wing') {
-                importPage(category, 'components/', 'left_wing');
-                importPage(category, 'components/', 'right_wing');
-            }
-            else if(category === 'shoes') {
-                importPage(category, 'components/', 'left_shoes');
-                importPage(category, 'components/', 'right_shoes');
-            }
-            else {
-                importPage(category, 'components/');
-            }
-        })
+        importComponentCategories();
     </script>
 </body>
 </html>
