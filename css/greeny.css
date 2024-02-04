@@ -13,7 +13,7 @@ body {
 
 #group_tears {
     opacity: 0;
-    z-index: 13;
+    z-index: 14;
     top: 450px;
     left: 170px;
     display: flex;
@@ -24,6 +24,19 @@ body {
 }
 #left_tears {
     transform: rotate(15deg);
+}
+
+#group_smile_eye {
+    opacity: 0;
+    z-index: 13;
+    top: 368px;
+    left: 190px;
+    display: flex;
+}
+#right_smile_eye {
+    transform: scaleX(-1);
+    margin-top: 7px;
+    margin-left: 35px;
 }
 
 #right_wing_box {
@@ -114,9 +127,4 @@ body {
     z-index: 1;
     top: 589px;
     left: 176px;
-}
-
-img {
-    opacity: 0.3;
-    position: absolute;
 }
